@@ -1,8 +1,13 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import API from './utils/API';
 
 function App() {
+  const getDog = () => { API.getRandomUser().then((data) => {
+    console.log(data.data.results)
+  })};
+  getDog()
   return (
     <div className="App">
       <header className="App-header">
