@@ -11,7 +11,7 @@ function Search() {
                     aria-label="Search"
                 />
                 <button className="btn btn-outline-dark my-2 my-sm-0" type="submit">
-                    Search
+                Search
                 </button>
           </form>
         </div>
