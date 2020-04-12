@@ -1,5 +1,6 @@
 import React from "react";
 import Moment from "react-moment";
+import "./style.css";
 
 function SearchResultCard(props) {
   return (
@@ -9,7 +10,7 @@ function SearchResultCard(props) {
           <th scope="row">
             <img
               alt="Employee"
-              className="img-fluid"
+              className="img-fluid rounded-circle"
               src={result.picture.medium}
             />
           </th>

@@ -9,6 +9,8 @@
       border: 10px;
       top: 0;
       z-index: 10;
+      background-color: #2B3D41;
+      color: #ffffff;
     }
   
     .downArrow {
@@ -17,7 +19,7 @@
       border-left: 5px solid transparent;
       border-right: 5px solid transparent;
       cursor: pointer;
-      border-top: 10px solid #2CBBD8;
+      border-top: 10px solid #F9B9F2;
       margin-top: 50px;
       position: relative;
       top: 16px;

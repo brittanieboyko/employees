@@ -2,8 +2,7 @@ import React from "react";
 
 function Search(props) {
   return (
-    <div className="container">
-      <form className="form-inline my-2 my-lg-0">
+      <form className="form-inline my-lg-0 d-flex justify-content-center searchBar">
         <input
           onChange={props.handleInputChange}
           value={props.search}
@@ -17,7 +16,6 @@ function Search(props) {
           Search
         </button>
       </form>
-    </div>
   );
 }
 

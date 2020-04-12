@@ -58,7 +58,7 @@ class SearchResultContainer extends Component {
           search={this.state.search}
         />
         <table className="table table-responsive-lg">
-          <thead className="thead-dark">
+          <thead className="thead">
             <tr>
               <th scope="col"></th>
               <th scope="col">
