@@ -1,5 +1,4 @@
 import React from 'react';
-import SearchResultCard from "./SearchResultCard";
 
 function Search(props) {
     return (
@@ -18,7 +17,6 @@ function Search(props) {
                 Search
                 </button>
           </form>
-          <SearchResultCard results={props.results} />
         </div>
     )
 }

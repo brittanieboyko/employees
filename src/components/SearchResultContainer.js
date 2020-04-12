@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Search from "./Search";
+import SearchResultCard from "./SearchResultCard";
 import API from "../utils/API";
 
 class SearchResultContainer extends Component {
@@ -16,12 +17,9 @@ class SearchResultContainer extends Component {
 
   handleInputChange = event => {
     event.preventDefault();
-    if (event.target.name === "search") {
-      const searchTerm = event.target.value.toLowerCase();
       this.setState({
-        search: searchTerm
+        search: event.target.value.toLowerCase()
       })
-    }
   }
 
   sortResults = (event) => {
@@ -32,15 +30,15 @@ class SearchResultContainer extends Component {
   render() {
     let filteredEmployees = this.state.results.filter(
       (employee) => {
-        return employee.name.first.toLowerCase().includes(this.state.search.toLowerCase());
+        return employee.name.first.toLowerCase().includes(this.state.search)
       })
     return (
       <div>
         <Search
           handleSort={this.sortResults}
           handleInputChange={this.handleInputChange}
-          search={this.state.search}
-          results={filteredEmployees}/>
+          search={this.state.search}/>
+        <SearchResultCard results={filteredEmployees} />
       </div>
     );
   }
