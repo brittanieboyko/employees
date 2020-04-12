@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import Search from "./Search";
-import SearchResultCard from "./SearchResultCard";
-import API from "../utils/API";
+import Search from "../Search";
+import SearchResultCard from "../SearchResultCard";
+import API from "../../utils/API";
 
 class SearchResultContainer extends Component {
   state = {

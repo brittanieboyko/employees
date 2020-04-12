@@ -1,7 +1,7 @@
-import React from 'react';
-import './App.css';
-import Header from './components/Header';
-import SearchResultContainer from './components/SearchResultContainer';
+import React from "react";
+import "./App.css";
+import Header from "./components/Header"
+import SearchResultContainer from "./components/SearchResultContainer";
 
 function App() {
   return (
