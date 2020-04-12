@@ -1,4 +1,5 @@
 import React from "react";
+import Moment from "react-moment";
 
 function SearchResultCard(props) {
   return (
@@ -17,7 +18,7 @@ function SearchResultCard(props) {
           </td>
           <td>{result.email}</td>
           <td>{result.cell}</td>
-          <td>{result.dob.date}</td>
+          <td><Moment format="MM/DD/YYYY">{result.dob.date}</Moment></td>
         </tr>
       ))}
     </tbody>
