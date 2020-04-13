@@ -1,6 +1,6 @@
 # Employee Directory
 
-An employee directory with React.
+An employee directory with made with React.
 
 ## User Story
 
